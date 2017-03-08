@@ -43,7 +43,7 @@ function parse (str, options) {
   var res
 
   while ((res = PATH_REGEXP.exec(str)) != null) {
-    var m = res[0]
+    var m = res[0]// 匹配的全部字符串
     var escaped = res[1]
     var offset = res.index
     path += str.slice(index, offset)
